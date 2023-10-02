@@ -1,0 +1,567 @@
+:root{
+  font-size:62.5%
+
+}
+ 
+*{
+  margin:0px;
+  box-sizing: border-box;
+  
+}
+body{
+  overflow: hidden;
+}
+.cont{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cont2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-align: center;
+  color:white;
+  font-family:'Orbitron';
+  letter-spacing: 2px; 
+  font-size: 9vw;
+  text-shadow: 1px 1px 50px black;
+  margin-top: -15rem;
+  
+  
+ 
+  
+}
+
+.description{
+  
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-top: -1rem;
+  
+   
+    font-size: 2.1em;
+    font-style: italic;
+    font-weight: 100;
+    display: flex;
+   
+  
+  
+ 
+
+}
+.inputfields{
+  color:white;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+
+  text-shadow: 1px 1px 50px black;
+  
+ 
+}
+button {
+  background:none;
+  border: none;
+  
+
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  min-width:54px;
+
+  border:1px solid rgba(20,227,248,255) ;
+ 
+ 
+}
+
+button:hover,
+button:active {
+  /* background-color: initial; */
+  background-position: 0 0;
+  color:white;
+  
+  border:1px solid rgba(20,227,248,255) ;
+}
+
+button:active {
+  opacity: .5;
+}
+
+body{
+  display: flex;
+}
+footer{
+ background-color:rgb(1, 1, 1,0.5);
+ 
+  align-self:flex-end;
+  position: absolute;
+  
+  width: 100%;
+  font-size: 3rem;
+  font-family: 'Orbitron';
+  max-height: 60px;
+  display: flex;
+  opacity: 0.7;
+ 
+}
+
+.box{
+
+	width: 100%;
+
+	height: 50px;
+
+	background-color: white;
+
+	border-radius:30px;
+
+	display: flex;
+
+	align-items: center;
+
+	padding: 20px;
+
+  margin-top: 2.5rem;
+  padding:0px;
+  margin-bottom: 2.5rem;
+
+}
+
+.box > i {
+
+	font-size: 20px;
+
+	color: #777;
+  background: none;
+  padding: 20px;
+  
+
+}
+
+.box > input{
+
+	flex: 1;
+
+	height: 40px;
+
+	border: none;
+
+	outline: none;
+
+	font-size: 18px;
+
+	padding-left: 10px;
+  background: none;
+
+  
+
+
+}
+/* .box:hover , .box>input:hover{
+  
+ 
+} */
+#box:hover{
+  background: rgba(84,88,94,255);
+  
+  
+  
+}
+input{
+  color: white;
+}
+
+#box{
+ 
+  background:none;
+  border: 1px solid rgba(23,226,252,255);
+}
+
+.sub{
+ 
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+button{
+  margin: 11px 4px;
+  font-weight: 100;
+  padding: 0px 16px;
+}
+h1{
+  font-weight: 300;
+}
+img.Glogo{
+  
+  width:50px;
+  height:50px;  
+  position: relative;
+  bottom: 0px;
+  
+}
+hr.foot{
+  margin: 11px 11px;
+ 
+  height: 30px;
+
+ }
+
+
+ .animation-box {
+  width: 75%;
+  
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+
+
+/* @keyframes bottomFadeOut {
+  0% {
+    position: relative;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: relative;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+} */
+/* @keyframes bottomFadeOut2 {
+  0% {
+    position: relative;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: relative;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+ */
+
+
+
+.fifth-text {
+  font-size:3rem;
+
+  opacity: 1;
+  color:white;
+  animation-name: bottomFadeOut;
+  animation-delay: 2s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  position: relative;
+ 
+  position: relative;
+  top:10px;
+  font-size: 2.5rem;
+
+ 
+  
+}
+.fifth-text2 {
+  font-size:2.5rem;
+
+  opacity: 1;
+  color: white;
+  animation-name: bottomFadeOut;
+  animation-delay: 2s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  position: relative;
+  
+ 
+  
+}
+img.insta{
+  width: 50px;
+  position: relative;
+  top:10px;
+  
+}
+.description {
+  /* animation: typing 10s forwards; */
+  animation-delay: 1s;
+  max-height: 31px;
+  overflow: hidden;
+  border-right: 0.1em solid #333;
+  white-space: wrap;
+  opacity: 1;
+  animation-iteration-count: infinite;
+ 
+  letter-spacing: 0px;
+  text-align: center;
+  
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  
+  100%{
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.an{
+  position: relative;
+}
+@keyframes fading {
+  0%{
+    width: 0;
+    opacity: 1;
+  }
+  70% {
+    width: 100%;
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid rgba(23,226,252,255);
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+button.aboutus{
+
+  position: absolute;
+  top:1vw;
+  left:90vw;
+  border-radius: 300px;
+  padding: 10px;
+  border:1px solid rgba(20,227,248,255) ;
+
+}
+
+.ham{
+  margin: 5px;
+}
+p{
+  color: white;
+  background-color: rgba(17,9,38,255);
+ font-size: 2.4rem;
+}
+.popup-content{
+  background-color: rgba(17,9,38,255);
+}
+.abt{
+
+  color: red;;
+}
+.names{
+  color:rgba(23,226,252,255);
+}
+.show-data{
+  color:white
+}
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+  font-size: 2rem;
+  width: 50%;
+ 
+ 
+  
+  
+  
+  
+  
+
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1; 
+  
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { bottom: -100%; opacity: 0;  font-size: 2rem; }
+  8.3%,25% { bottom: 22%;  opacity: 1;  font-size: 2rem;}
+  33.33%, 100% { bottom:22%; opacity: 0; font-size: 2rem; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { bottom: -100%; opacity: 0; font-size: 2rem; }
+  41.63%, 58.29% { bottom: 22%; opacity: 1; font-size: 2rem; }
+  66.66%, 100% { bottom: 22%; opacity: 0; font-size: 2rem; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { bottom: -100%; opacity: 0; font-size: 2rem; }
+  74.96%, 91.62% { bottom: 22%; opacity: 1;  font-size: 2rem;}
+  100% { bottom: 22%; opacity: 0; }
+}
+
+#showdata{
+  font-size:3rem;
+  font-family: 'Orbitron';
+  text-align: center;
+  /* animation: typing 10s forwards; */
+  animation-delay: 1s;
+  max-height: 31px;
+  overflow: hidden;
+  border-right: 0.1em solid #333;
+  white-space: wrap;
+  opacity: 1;
+  animation-iteration-count: infinite;
+ 
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.loader {
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 100%;
+  height: var(--height-of-loader);
+  border-radius:30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+  display: none;
+ }
+ 
+ .loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+ }
+ 
+ @keyframes moving {
+  50% {
+   width: 100%;
+  }
+ 
+  100% {
+   width: 0;
+   right: 0;
+   left: unset;
+  }
+ }
+ 
+.good{
+  /* position: absolute; */
+  color:#0FFF50;
+  font-size: 2.4rem;
+  
+  text-shadow: 2px 1px 20px #0FFF50;
+  animation: none;
+  display: none;
+  transition: 2s;
+  
+
+}
+.bad{
+ /* width: 100 */
+  /* position: absolute; */
+  color: red;
+  font-size: 2.3rem;
+  text-shadow: 2px 1px 20px red;
+  animation: none;
+ display: none;
+ transition: 2s;
+  
+}

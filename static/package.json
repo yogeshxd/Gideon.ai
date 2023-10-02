@@ -1,0 +1,25 @@
+{
+  "name": "three",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0",
+    "webpack": "^5.76.3"
+  },
+  "dependencies": {
+    "bower": "^1.8.14",
+    "dat.gui": "^0.7.9",
+    "gsap": "^3.11.5",
+    "scss": "^0.2.4"
+  },
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

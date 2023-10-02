@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/style2.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="static/main_v3.png" />
+
+    <title>Gideon.Ai</title>
+  </head>
+  <body id="bod">
+    <script type="module" src="/static/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" ></script>
+    
+    <script>
+      function myFunction() {
+        document.getElementById("loader").style.display ="block";
+        document.getElementById("good").style.display = "none";
+        document.getElementById("bad").style.display = "none";
+        
+
+        function Detect() {
+          const myTimeout = setTimeout(function () {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("bad").style.display = "block";
+            document.getElementById("clicked").disabled = false;
+          }, 2000);
+        }
+        function safe() {
+          const myTimeout = setTimeout(function () {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("good").style.display = "block";
+            document.getElementById("clicked").disabled = false;
+          }, 2000);
+        }
+
+        
+        var box1 = $("#box1").val();
+        $.ajax({
+          url: "/join",
+          type: "POST",
+          data: { box1:box1 },
+        }).done(function(response) {
+          // var html= "<br><br><br><p> <b> RESULT : <b><p>";
+          response = response.result;
+          console.log(response.output);
+
+          if ((response.output == "bad")) {
+            Detect();
+          } else if ((response.output == "good")) {
+            safe();
+          }
+          //  $.each(response,function(key,val){
+          //  console.log(val);
+          //     html+="<p>"+val+"<p>"
+          // });
+          // html +="<br>";
+          // $(".show-data").html(html);
+        });
+      }
+
+      function openPopup() {
+        document.getElementById("popup").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+      document.getElementById("clicked").disabled = true;
+    </script>
+
+    <div class="cont">
+      <div class="cont2">
+        <div>
+          <h1 id="demo">GIDEON.AI</h1>
+
+          <div class="description">
+            <div class="item-1">
+              "Stay ahead of cybercriminals with our cutting-edge AI phishing
+              prevention.
+            </div>
+            <div class="item-2">
+              "Stay one step ahead of phishing scams with the power of AI
+              protection."
+            </div>
+            <div class="item-3">
+              "Don't be fooled by phishing scams, let our AI-based solution
+              safeguard you."
+            </div>
+          </div>
+
+          <div id="InputFields" class="inputfields">
+            <div class="box" id="box">
+              <i class="fa fa-search" aria-hidden="true"></i>
+
+              <input type="text" id="box1" name="box1" />
+            </div>
+            <div id="loader" class="loader"></div>
+            <div id="showdata" class="show-data">
+              <div class="good" id ="good">
+                "No need to worry - our AI gives the green light for that link!"
+              </div>
+              <div id="bad" class="bad">
+                "Sorry, phisher - our AI sees right through your link!"
+              </div>
+            </div>
+            <div class="sub">
+              <button id="clicked" onclick="myFunction()">Verify URL</button>
+
+              <button
+                id="clear"
+                onclick="document.getElementById('box1').value = ''"
+              >
+                Clean Slate
+              </button>
+            </div>
+
+            <!-- <label class="label" for='Checker'>
+              URL:
+            </label><input id="Checker" type="text" id="text1" name="text1"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <footer>
+      
+      <hr class="foot" />
+
+      <div class="fifth-text">Follow us on Instagram:</div>
+      <div class="fifth-text2">
+        <img class="insta" src="static/insta.png" />@adityaanand9091
+      </div>
+      <div class="fifth-text2">
+        <img class="insta" src="static/insta.png" />@xdyogesh
+      </div>
+    </footer> -->
+    <button class="aboutus" onclick="openPopup()">
+      <hr class="ham" />
+      <hr class="ham" />
+      <hr class="ham" />
+    </button>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>
+          <span class="abt">-ABOUT US-</span>
+          <br />
+          Our team is led by <span class="names">Aditya Anand(CSE-4A) </span>and
+          <span class="names">Yogesh Gupta(CSE-6A)</span>, both highly skilled
+          and experienced individuals in the field of technology. Aditya is an
+          expert web development and UI/UX design. Yogesh brings a wealth of
+          knowledge and experience in Python programming, and cybersecurity to
+          the team.<br /><br />
+
+          Together, our team is committed to using technology to make a positive
+          impact on the world. We believe that collaboration is key to achieving
+          success, and we work together to create innovative solutions that
+          solve complex problems.<br />
+          <br />
+
+          With Yogesh's skills in Python programming, artificial intelligence,
+          cybersecurity and with Aditya's knowledge of machine learning and
+          artificial intelligence , we are capable of creating solutions that
+          are accurate, efficient, and reliable. Aditya's ability to wear
+          multiple hats in the technology space, including web development and
+          UI/UX design, allows us to create user-friendly and intuitive
+          interfaces that enhance the user experience.<br /><br />
+
+          Thank you for visiting our website.<br /><br />
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var myDiv = document.getElementById("showdata");
+      var divText = myDiv.textContent;
+      console.log(divText);
+      function loading() {
+        document.getElementById("InputFields").style.display = none;
+      }
+      if ((divText = "good")) {
+        console.log("change");
+      }
+    </script>
+  </body>
+</html>

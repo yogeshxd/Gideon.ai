@@ -46,7 +46,7 @@ After which you can simply visit your localhost on port 5000 and the interactive
 
 ## Contributing
 
-We welcome contributions from the community. If you encounter any issues, have feature suggestions, or want to contribute code, please feel free to [open an issue](https://github.com/yourusername/url-analyzer/issues).
+We welcome contributions from the community. If you encounter any issues, have feature suggestions, or want to contribute code, please feel free to [open an issue](https://github.com/yogeshxd/Gideon.ai/issues).
 
 ## License
 

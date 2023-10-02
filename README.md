@@ -1,6 +1,6 @@
 # Gideon.ai 
 
-![GitHub](https://img.shields.io/github/license/yogeshxd/Gideon.a)
+![GitHub](https://img.shields.io/github/license/yogeshxd/Gideon.ai)
 ![GitHub](https://img.shields.io/github/last-commit/yogeshxd/Gideon.ai)
 
 Welcome to Gideon.ai, a powerful tool that distinguishes genuine websites from phishy ones. With the increasing number of phishing attempts and malicious websites, it's essential to have a reliable way to analyze URLs and determine their trustworthiness. This Python-based URL Analyzer is designed to help you do just that.

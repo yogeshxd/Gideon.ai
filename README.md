@@ -50,7 +50,3 @@ We welcome contributions from the community. If you encounter any issues, have f
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-If you have any questions, encounter problems, or just want to share your feedback, don't hesitate to open an issue. We are here to help make the internet a safer place!

@@ -38,7 +38,7 @@ npm install
 Now that you have installed the required dependencies, you can start using Gideon.ai. Run the following command to start the server:
 
 ```bash
-python app.py
+python web.py
 ```
 
 After which you can simply visit your localhost on port 5000 and the interactive website will be up and running.

@@ -43,6 +43,14 @@ python web.py
 
 After which you can simply visit your localhost on port 5000 and the interactive website will be up and running.
 
+## What's new??
+
+### Updates
+ - Initial Upload
+
+### Future Updates
+ - To add an API for scalability.
+
 ## Contributing
 
 We welcome contributions from the community. If you encounter any issues, have feature suggestions, or want to contribute code, please feel free to [open an issue](https://github.com/yogeshxd/Gideon.ai/issues).

@@ -35,6 +35,8 @@ npm install
 
 ## Usage
 
+### Website
+
 Now that you have installed the required dependencies, you can start using Gideon.ai. Run the following command to start the server:
 
 ```bash
@@ -43,13 +45,26 @@ python web.py
 
 After which you can simply visit your localhost on port 5000 and the interactive website will be up and running.
 
+### API
+
+With the latest update I have also added the api for this project which you can run by navigating to the api folder and from there run the following command:
+
+```bash
+python api.py
+```
+
+Now once the api is up and running you can use the api by going to `https://127.0.0.1:5000/predict/<url>` (remember to replace the <url> with actual url).
+It will return you good or bad based upon the prediction.
+
 ## What's new??
 
 ### Updates
  - Initial Upload
+ - Added API support
 
 ### Future Updates
- - To add an API for scalability.
+ - ~~To add an API for scalability.~~
+ - To integrate website with api for multiple frontend support.
 
 ## Contributing
 

@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template,jsonify
-import pickle5 as pickle
+import pickle
 import re
 
 app = Flask(__name__)

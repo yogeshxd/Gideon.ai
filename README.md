@@ -65,6 +65,7 @@ It will return you good or bad based upon the prediction.
 ### Future Updates
  - ~~To add an API for scalability.~~
  - To integrate website with api for multiple frontend support.
+ - To add an extension for ease of use.
 
 ## Contributing
 

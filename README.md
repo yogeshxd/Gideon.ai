@@ -50,6 +50,7 @@ After which you can simply visit your localhost on port 5000 and the interactive
 With the latest update I have also added the api for this project which you can run by navigating to the api folder and from there run the following command:
 
 ```bash
+cd api
 python api.py
 ```
 

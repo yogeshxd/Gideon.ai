@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Gideon.AI",
+  "version": "1.0",
+  "description": "Detects phishing websites using A.I",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "http://116.74.16.117:5000/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "activeTab",
+    "http://116.74.16.117:5000/*"
+  ]
+
+}

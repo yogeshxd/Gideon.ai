@@ -47,7 +47,7 @@ After which you can simply visit your localhost on port 5000 and the interactive
 
 ### API
 
-With the latest update I have also added the api for this project which you can run by navigating to the api folder and from there run the following command:
+You can run the api by running the following commands:
 
 ```bash
 cd api
@@ -56,6 +56,16 @@ python api.py
 
 Now once the api is up and running you can use the api by going to `https://127.0.0.1:5000/predict/<url>` (remember to replace the <url> with actual url).
 It will return you good or bad based upon the prediction.
+
+### Extension
+
+The browser extension has been added with the latest update.. You can run the extension by running the following commands:
+
+```bash
+cd Extension
+python app.py
+```
+After starting the backend of the extension, please refer to [Extension Setup](https://github.com/yogeshxd/Gideon.ai/blob/main/Extension/setup.md) for installation in different browsers.
 
 ## What's new??
 

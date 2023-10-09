@@ -62,11 +62,12 @@ It will return you good or bad based upon the prediction.
 ### Updates
  - Initial Upload
  - Added API support
+ - Added extension. (refer to [Extension Setup](https://github.com/yogeshxd/Gideon.ai/blob/main/Extension/setup.md) for installation in different browsers.)
 
 ### Future Updates
  - ~~To add an API for scalability.~~
  - To integrate website with api for multiple frontend support.
- - To add an extension for ease of use.
+ - ~~To add an extension for ease of use.~~
  - To integrate extension with api.
 
 ## Contributing

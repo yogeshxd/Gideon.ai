@@ -81,7 +81,7 @@ After starting the backend of the extension, please refer to [Extension Setup](h
  - ~~To add an API for scalability.~~
  - ~~To integrate extension and website with api.~~
  - ~~To add an extension for ease of use.~~
- - Most of the updates have been pushed and now I'm moving on to new projects. If you have any update suggestion then let me know by [opening an new issue](https://github.com/yogeshxd/Gideon.ai/issues).
+ - Most of the updates have been pushed and now I'm moving on to new projects. If you have any update suggestion then let me know by [opening an new issue](https://github.com/yogeshxd/Gideon.ai/issues)..
 
 ## Contributing
 

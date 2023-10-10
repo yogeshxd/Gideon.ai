@@ -26,36 +26,38 @@ First, install the Python dependencies using pip:
 pip install -r requirements.txt
 ```
 
-Next, navigate to the `static` folder and install the required Node.js modules:
+Next, navigate to the `web/static` and `Extension` folder and install the required Node.js modules:
 
 ```bash
-cd static
+cd web/static
+npm install
+cd ~ && cd Extension
 npm install
 ```
 
 ## Usage
-
-### Website
-
-Now that you have installed the required dependencies, you can start using Gideon.ai. Run the following command to start the server:
-
-```bash
-python web.py
-```
-
-After which you can simply visit your localhost on port 5000 and the interactive website will be up and running.
 
 ### API
 
 You can run the api by running the following commands:
 
 ```bash
-cd api
 python api.py
 ```
 
 Now once the api is up and running you can use the api by going to `https://127.0.0.1:5000/predict/<url>` (remember to replace the <url> with actual url).
 It will return you good or bad based upon the prediction.
+
+### Website
+
+Now that you have installed the required dependencies, you can start using Gideon.ai. Run the following command to start the web server:
+
+```bash
+cd web
+python web.py
+```
+
+After which you can simply visit your localhost on port 5001 and the interactive website will be up and running.
 
 ### Extension
 
@@ -73,12 +75,12 @@ After starting the backend of the extension, please refer to [Extension Setup](h
  - Initial Upload
  - Added API support
  - Added extension. (refer to [Extension Setup](https://github.com/yogeshxd/Gideon.ai/blob/main/Extension/setup.md) for installation in different browsers.)
+ - Integrated website and extension with api.
 
 ### Future Updates
  - ~~To add an API for scalability.~~
- - To integrate website with api.
+ - ~~To integrate extension and website with api.~~
  - ~~To add an extension for ease of use.~~
- - To integrate extension with api.
 
 ## Contributing
 
